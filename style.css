@@ -1,0 +1,124 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  -stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(15, 17%, 28%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+  --font-body: "Outfit", sans-serif;
+  --font-title: "Young Serif", serif;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin-top: 1rem;
+}
+body {
+  margin: 0;
+  font-family: var(font-body);
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(stone-900);
+  background-color: var(stone-100);
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: var(white);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-header {
+  text-align: center;
+}
+
+.recipe-header h1 {
+  font-family: var(--font-title);
+  font-size: 2rem;
+  color: var(--stone-900);
+}
+
+.recipe-header p {
+  margin: 0.8rem 0;
+  color: var(--stone-600);
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 8px;
+  margin: 1rem 0;
+}
+
+.prep-time {
+  background-color: var(--rose-50);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  color: var(--rose-800);
+}
+
+.prep-time ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.prep-time li {
+  margin: 0.5rem 0;
+}
+
+h2 {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  color: var(--brown-800);
+}
+
+.ingredients,
+.instructions {
+  margin-bottom: 1.5rem;
+}
+
+.ingredients ul,
+.instructions ol {
+  padding-left: 1.5rem;
+}
+
+.ingredients ul li,
+.instructions ol li {
+  margin: 0.5rem 0;
+}
+
+.nutrition {
+  background-color: var(--stone-150);
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.nutrition th,
+.nutrition td {
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.nutrition th {
+  color: var(--stone-900);
+}
+
+.nutrition td {
+  color: var(--stone-600);
+}
